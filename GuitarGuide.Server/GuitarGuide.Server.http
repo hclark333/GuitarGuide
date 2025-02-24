@@ -1,0 +1,6 @@
+@GuitarGuide.Server_HostAddress = http://localhost:5128
+
+GET {{GuitarGuide.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
