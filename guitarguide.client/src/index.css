@@ -1,16 +1,14 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: black;
+    /*color: #213547;*/
+    background-color: #ffffff;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -66,26 +64,75 @@ button:focus-visible {
 }
 
 /* Header Styling */
-.header {
-    text-align: center;
+.title {
+    display: inline-block;
+    border-style: solid;
+    border-color: black;
     background: rgb(241,110,2);
     background: radial-gradient(circle, rgba(241,110,2,1) 0%, rgba(0,0,0,1) 90%);
     color: white;
-}
-
-.header h1 {
-    margin: 0;
-    padding-top: .2em;
-}
-
-.title {
     font-family: "Baskervville SC", serif;
-    font-size: 2em;
-    font-weight: bold;  
+    font-size: .8em;
+    font-weight: bold;
+    text-align: center;
+    width: 15%;
+    min-width: 300px;
+    border-radius: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 1em;
+    margin-top: 1em;
 }
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
 
 .navbar {
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:hover {
+    color: inherit;
+}
+
+
+/*Guitar Catalog styling*/
+.catalog {
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1.5em;
+    row-gap: 1.5em;
+}
+
+.guitar {
+    background-color: rgba(255, 255, 255, 0.671);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 25vw;
+}
+
+.guitar img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 300px;
+}
+
+.guitar:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }

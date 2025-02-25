@@ -1,16 +1,18 @@
 import Guitar from "./guitar";
 import PropTypes from "prop-types";
+import { Link } from "react-router";
 
 function Catalog({ guitars }) {
     return (
         <div className="catalog">
-            {guitars.map((guitar, index) => (
-                <Guitar
-                    key={index}
-                    name={guitar.name}
-                    image={guitar.image}
-                    price={guitar.price}
-                />
+            {guitars.map((guitar) => (
+                <Link to={`/guitar-info/${guitar.id}`} key={guitar.id} className="link">
+                    <Guitar
+                        name={guitar.name}
+                        image={guitar.image}
+                        price={guitar.price}
+                    />
+                </Link>
             ))}
         </div>
     );
@@ -19,6 +21,7 @@ function Catalog({ guitars }) {
 Catalog.propTypes = {
     guitars: PropTypes.arrayOf(
         PropTypes.shape({
+            id: PropTypes.string.isRequired,
             name: PropTypes.string.isRequired,
             image: PropTypes.string.isRequired,
             price: PropTypes.string.isRequired,

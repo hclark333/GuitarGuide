@@ -1,0 +1,18 @@
+import images from "../images/imageImports";
+
+export const electricGuitars =
+    [
+        { id: "strat", name: "Fender Stratocaster", image: images.strat, price: "$599.99", description: "The Fender Stratocaster is an iconic electric guitar known for its sleek double-cutaway body, smooth playability, and versatile tone. Featuring three single-coil pickups, a contoured body, and a tremolo bridge, the Strat delivers crisp highs, rich mids, and dynamic response, making it a favorite among guitarists across genres, from rock and blues to jazz and pop." },
+        { id: "tele", name: "Fender Telecaster", image: images.tele, price: "$599.99", description: "The Fender Telecaster is a legendary solid-body electric guitar known for its bright, punchy tone and simple yet effective design. With its signature single-cutaway body, two single-coil pickups, and crisp attack, the Tele is a favorite among country, rock, and blues players." },
+        { id: "jaguar", name: "Fender Jaguar", image: images.jaguar, price: "$459.99", description: "The Fender Jaguar is a unique offset electric guitar featuring a shorter 24-inch scale, dual-circuit electronics, and bright, cutting single-coil pickups. Known for its distinctive tone and surf rock heritage, the Jaguar is also popular in indie and alternative music." },
+        { id: "jazzmaster", name: "Fender Jazzmaster", image: images.jazzmaster, price: "$1,849.99", description: "The Fender Jazzmaster boasts a smooth, warm tone with a floating tremolo system and dual-circuit electronics, making it a favorite for surf, jazz, and alternative rock players. Its offset body and wide single-coil pickups provide a rich, expressive sound." },
+        { id: "mustang", name: "Fender Mustang", image: images.mustang, price: "$679.99", description: "The Fender Mustang is a compact, short-scale electric guitar with a raw, punchy tone and distinctive offset design. Originally popular with student guitarists, it later became an indie and grunge favorite due to its gritty, garage-rock character." },
+        { id: "lesPaul", name: "Gibson Les Paul", image: images.lesPaul, price: "$2,999.99", description: "The Gibson Les Paul is a legendary solid-body guitar known for its thick, sustain-rich tone and classic single-cutaway design. Featuring humbucking pickups, a carved maple top, and a mahogany body, it delivers warm, powerful tones perfect for rock, blues, and metal." },
+        { id: "sg", name: "Gibson SG", image: images.sg, price: "$1,999.99", description: "The Gibson SG is a lightweight, double-cutaway electric guitar with a fast neck and aggressive tone. Its dual humbuckers, deep cutaways, and mahogany body make it a staple in hard rock and metal, offering both sustain and bite." },
+        { id: "ibanez", name: "Ibanez RG", image: images.ibanez, price: "$429.99", description: "The Ibanez RG is a high-performance electric guitar built for speed and precision. With its thin, fast neck, deep cutaways, and powerful humbuckers, the RG is a favorite among metal and shred guitarists for its aggressive tone and effortless playability." },
+        { id: "jackson", name: "Jackson King V", image: images.jackson, price: "$799.99", description: "The Jackson King V is a sharp-edged, V-shaped electric guitar designed for heavy metal. With high-output humbuckers, a fast-playing neck, and a Floyd Rose tremolo system, it delivers crushing tone and bold stage presence, ideal for high-gain riffing and soloing." },
+    ];
+
+export const allGuitars = [
+    ...electricGuitars
+];
