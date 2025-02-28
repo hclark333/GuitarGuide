@@ -2,14 +2,21 @@ import PropTypes from "prop-types";
 
 function GuitarInfo({ guitar }) {
     return (
-        <div>
-            <div className="infoImage">
-                <img src={guitar.image} alt={guitar.name} />
+        <div className="info">
+            <div className="infoImagePrice">
+                <div className="infoImage">
+                    <img src={guitar.image} alt={guitar.name} />
+                </div>
+                <h2>{guitar.price}</h2>
+                <div className="infoButtons">
+                    <button className="buyNow">Buy Now</button>
+                    <button className="cart">Add to Cart</button>
+                </div>
             </div>
             <div className="infoDescription">
                 <h1>{guitar.name}</h1>
-                <h2>{guitar.price}</h2>
                 <p>{guitar.description}</p>
+                
             </div>
         </div>
     );

@@ -2,9 +2,8 @@
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-    color: black;
-    /*color: #213547;*/
-    background-color: #ffffff;
+    color: #2A2D32;
+    background-color: #E9E5DF;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -12,90 +11,141 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+    color: #535bf2;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
+    margin-bottom: 1em;
+    min-width: 320px;
+    min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.8em;
+    line-height: 1.1;
+}
+
+h2, h3, button {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+    border: 1px solid transparent;
+    border-color: #2A2D32;
+    background-color: #E9E5DF;
+    cursor: pointer;
+    transition: background-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+    background-color: #CDD6D3;
 }
+
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+    outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Homepage Styling */
+.logo {
+    display: block;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.cardLinks {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.acousticCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 25vh;
+    background-image: url("./images/acoustic.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    color: #E9E5DF;
+    margin: 1em;
+}
+
+.electricCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 25vh;
+    background-color: black;
+    background-image: url("./images/electric.png");
+    background-position: center;
+    background-size: 75% auto;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    color: #2A2D32;
+    margin: 1em;
+}
+
+.bassCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 25vh;
+    background-color: black;
+    background-image: url("./images/bass.png");
+    background-position: center;
+    background-size: 75% auto;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    color: #E9E5DF;
+    margin: 1em;
+}
 /* Header Styling */
-.title {
-    display: inline-block;
-    border-style: solid;
-    border-color: black;
-    background: rgb(241,110,2);
-    background: radial-gradient(circle, rgba(241,110,2,1) 0%, rgba(0,0,0,1) 90%);
-    color: white;
-    font-family: "Baskervville SC", serif;
-    font-size: .8em;
-    font-weight: bold;
-    text-align: center;
-    width: 15%;
-    min-width: 300px;
-    border-radius: 50%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 1em;
-    margin-top: 1em;
+.header {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin: 1em
+}
+
+.logoSmall {
+    height: 5em;
 }
 
 hr {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-    margin-top: 1em;
-    margin-bottom: 0;
+    margin-bottom: 1em;
 }
 
 
 .navbar {
     display: flex;
     flex-flow: row;
+    width: 100%;
     justify-content: space-evenly;
 }
 
@@ -124,15 +174,66 @@ hr {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     text-align: center;
     max-width: 25vw;
+    min-height: 422px;
 }
 
 .guitar img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-height: 300px;
+    height: 300px;
 }
 
 .guitar:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+/* Guitar info styling */
+.info {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.infoImagePrice {
+    text-align: center;
+}
+
+.infoImage {
+    background-color: white;
+    width: 40vw;
+}
+
+.infoImage img {
+    height: 55vh;
+    width: auto;
+    padding: 1em;
+}
+
+.infoDescription {
+    width: 45vw;
+    height: 75vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    row-gap: 1em;
+}
+
+.infoDescription h1 {
+    width: 100%;
+    margin: 0;
+}
+
+.infoButtons {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    column-gap: 1.5em;
+}
+
+.infoButtons button {
+    padding: 1.5em 2em;
+    width: 10em;
 }
