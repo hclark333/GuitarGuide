@@ -1,6 +1,15 @@
 import PropTypes from "prop-types";
+import { useCart } from "../context/cartContext";
+import { Link } from "react-router";
 
 function GuitarInfo({ guitar }) {
+    const { addToCart } = useCart();
+
+    function handleAddToCart() {
+        let cartItem = { name: guitar.name, image: guitar.image, price: guitar.price };
+        addToCart(cartItem);
+    }
+
     return (
         <div className="info">
             <div className="infoImagePrice">
@@ -9,8 +18,8 @@ function GuitarInfo({ guitar }) {
                 </div>
                 <h2>{guitar.price}</h2>
                 <div className="infoButtons">
-                    <button className="buyNow">Buy Now</button>
-                    <button className="cart">Add to Cart</button>
+                    <Link to="/cart"><button onClick={handleAddToCart} className="buyNow">Buy Now</button></Link>
+                    <button onClick={handleAddToCart} className="cart">Add to Cart</button>
                 </div>
             </div>
             <div className="infoDescription">

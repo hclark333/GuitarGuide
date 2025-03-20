@@ -4,6 +4,7 @@ import Home from "./home";
 import GuitarInfoPage from "./guitarInfoPage";
 import AcousticPage from "./acousticPage";
 import BassPage from "./bassPage";
+import CartPage from "./cartPage";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/electric-guitars" element={<ElectricPage />} />
                 <Route path="/bass-guitars" element={<BassPage />} />
                 <Route path="/guitar-info/:id" element={<GuitarInfoPage />} />
+                <Route path="/cart" element={<CartPage />} />
             </Routes>
         </div>
     );

@@ -13,6 +13,7 @@ function Header() {
                     <Link to="/electric-guitars" className="link"><h3>Electric</h3></Link>
                     <Link to="/bass-guitars" className="link"><h3>Bass</h3></Link>
                     <Link to="/tabs" className="link"><h3>Tabs</h3></Link>
+                    <Link to="/cart" className="link"><h3>Cart</h3></Link>
                 </div>
             </div>
             <hr></hr>            
