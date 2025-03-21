@@ -19,7 +19,7 @@ function GuitarInfo({ guitar }) {
                 <h2>{guitar.price}</h2>
                 <div className="infoButtons">
                     <Link to="/cart"><button onClick={handleAddToCart} className="buyNow">Buy Now</button></Link>
-                    <button onClick={handleAddToCart} className="cart">Add to Cart</button>
+                    <button onClick={handleAddToCart} className="cartButton">Add to Cart</button>
                 </div>
             </div>
             <div className="infoDescription">
